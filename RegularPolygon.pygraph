@@ -1,0 +1,2118 @@
+{
+    "name": "root",
+    "category": "",
+    "vars": [],
+    "nodes": [
+        {
+            "package": "PyFlowFreeCAD",
+            "lib": null,
+            "type": "\u6b63\u591a\u8fb9\u5f62",
+            "owningGraphName": "root",
+            "name": "\u6b63\u591a\u8fb9\u5f62",
+            "uuid": "ecad389f-619c-4bee-9cd9-c3b9c4c58603",
+            "inputs": [
+                {
+                    "name": "\u8fd0\u884c",
+                    "package": "PyFlowBase",
+                    "fullName": "\u6b63\u591a\u8fb9\u5f62_\u8fd0\u884c",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "3eae6182-5537-42f4-b0c0-bc197dba8112",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u8fd0\u884c",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "\u989c\u8272",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u6b63\u591a\u8fb9\u5f62_\u989c\u8272",
+                    "dataType": "VectorPin",
+                    "direction": 0,
+                    "value": "{\"Vector\": [1.0, 1.0, 1.0]}",
+                    "uuid": "de00faee-ae49-411d-a88e-7348baf2b5cb",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u989c\u8272",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "\u5916\u63a5\u5706\u534a\u5f84",
+                    "package": "PyFlowBase",
+                    "fullName": "\u6b63\u591a\u8fb9\u5f62_\u5916\u63a5\u5706\u534a\u5f84",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "10.0",
+                    "uuid": "9edd267b-ed32-45d7-832e-4f43906de875",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 3,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u5916\u63a5\u5706\u534a\u5f84",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "\u8fb9\u6570",
+                    "package": "PyFlowBase",
+                    "fullName": "\u6b63\u591a\u8fb9\u5f62_\u8fb9\u6570",
+                    "dataType": "IntPin",
+                    "direction": 0,
+                    "value": "6",
+                    "uuid": "e0ab173e-2cb5-4489-a5b2-2340dd385435",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeInt",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u6b63\u591a\u8fb9\u5f62",
+                            "inPinId": 4,
+                            "lhsNodeUid": "25a80b6b-b5b5-4dfb-b347-237c44066662",
+                            "rhsNodeUid": "ecad389f-619c-4bee-9cd9-c3b9c4c58603"
+                        }
+                    ],
+                    "pinIndex": 4,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u8fb9\u6570",
+                        "wires": {
+                            "4": {
+                                "sourceUUID": "a06af8ab-2fca-4a2c-beff-b15d51c53a72",
+                                "destinationUUID": "e0ab173e-2cb5-4489-a5b2-2340dd385435",
+                                "sourceName": "makeInt_out",
+                                "destinationName": "\u6b63\u591a\u8fb9\u5f62_\u8fb9\u6570",
+                                "uuid": "20e5a797-a919-4897-88dd-aaf615157963",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "\u4f20\u5bfc",
+                    "package": "PyFlowBase",
+                    "fullName": "\u6b63\u591a\u8fb9\u5f62_\u4f20\u5bfc",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "65ba941b-475d-46a7-8674-5760d9a4fb6b",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u6b63\u591a\u8fb9\u5f62",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u62c9\u4f38",
+                            "inPinId": 1,
+                            "lhsNodeUid": "ecad389f-619c-4bee-9cd9-c3b9c4c58603",
+                            "rhsNodeUid": "21141782-b96b-4b43-bfd4-943507fd5147"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u4f20\u5bfc",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "65ba941b-475d-46a7-8674-5760d9a4fb6b",
+                                "destinationUUID": "8b58ec03-d6eb-4a17-bf39-64fed542ae8c",
+                                "sourceName": "\u6b63\u591a\u8fb9\u5f62_\u4f20\u5bfc",
+                                "destinationName": "\u62c9\u4f38_\u8fd0\u884c",
+                                "uuid": "ae82db33-88aa-4b5a-a9a3-c4b20d6a02e2",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u5b9e\u4f53",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u6b63\u591a\u8fb9\u5f62_\u5b9e\u4f53",
+                    "dataType": "FCobjPin",
+                    "direction": 1,
+                    "value": "\"ID_ecad389f_619c_4bee_9cd9_c3b9c4c58603\"",
+                    "uuid": "9d18d36e-df68-4840-9053-d1903ac4e92e",
+                    "bDirty": true,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u6b63\u591a\u8fb9\u5f62",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706",
+                            "inPinId": 3,
+                            "lhsNodeUid": "ecad389f-619c-4bee-9cd9-c3b9c4c58603",
+                            "rhsNodeUid": "f4be03b0-6998-4943-b3b7-7f696c82a10c"
+                        },
+                        {
+                            "lhsNodeName": "\u6b63\u591a\u8fb9\u5f62",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u62c9\u4f38",
+                            "inPinId": 2,
+                            "lhsNodeUid": "ecad389f-619c-4bee-9cd9-c3b9c4c58603",
+                            "rhsNodeUid": "21141782-b96b-4b43-bfd4-943507fd5147"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u5b9e\u4f53",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "9d18d36e-df68-4840-9053-d1903ac4e92e",
+                                "destinationUUID": "f4ef9bb3-fad9-460b-b250-ddeda784458b",
+                                "sourceName": "\u6b63\u591a\u8fb9\u5f62_\u5b9e\u4f53",
+                                "destinationName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706_\u6b63\u591a\u8fb9\u5f62",
+                                "uuid": "8a6b812f-740c-4ff8-9277-01ad2d78d31e",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            },
+                            "2": {
+                                "sourceUUID": "9d18d36e-df68-4840-9053-d1903ac4e92e",
+                                "destinationUUID": "b5c47f35-323b-4af2-a33f-cb47d78f0283",
+                                "sourceName": "\u6b63\u591a\u8fb9\u5f62_\u5b9e\u4f53",
+                                "destinationName": "\u62c9\u4f38_\u5f85\u62c9\u4f38\u5b9e\u4f53",
+                                "uuid": "a8584fab-f4e5-4a1b-a773-2b38f8dfeb1b",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "\u6b63\u591a\u8fb9\u5f62"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u6b63\u591a\u8fb9\u5f62</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -565.5955015221799,
+            "y": -289.63600618855963
+        },
+        {
+            "package": "PyFlowFreeCAD",
+            "lib": null,
+            "type": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706",
+            "owningGraphName": "root",
+            "name": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706",
+            "uuid": "f4be03b0-6998-4943-b3b7-7f696c82a10c",
+            "inputs": [
+                {
+                    "name": "\u989c\u8272",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706_\u989c\u8272",
+                    "dataType": "VectorPin",
+                    "direction": 0,
+                    "value": "{\"Vector\": [1.0, 1.0, 1.0]}",
+                    "uuid": "00249039-498b-45ee-b54e-831d98780062",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u989c\u8272",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "\u8fd0\u884c",
+                    "package": "PyFlowBase",
+                    "fullName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706_\u8fd0\u884c",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "4e46a71e-e0ad-4e08-91e1-e1096a592fc7",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u62c9\u4f38",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706",
+                            "inPinId": 1,
+                            "lhsNodeUid": "21141782-b96b-4b43-bfd4-943507fd5147",
+                            "rhsNodeUid": "f4be03b0-6998-4943-b3b7-7f696c82a10c"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u8fd0\u884c",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "bd6ba0c7-b685-4d6c-b174-f394f5dfe2e1",
+                                "destinationUUID": "4e46a71e-e0ad-4e08-91e1-e1096a592fc7",
+                                "sourceName": "\u62c9\u4f38_\u4f20\u5bfc",
+                                "destinationName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706_\u8fd0\u884c",
+                                "uuid": "26766153-0cfa-4549-8db3-ae498d0e4ec3",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u6b63\u591a\u8fb9\u5f62",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706_\u6b63\u591a\u8fb9\u5f62",
+                    "dataType": "FCobjPin",
+                    "direction": 0,
+                    "value": "\"ID_ecad389f_619c_4bee_9cd9_c3b9c4c58603\"",
+                    "uuid": "f4ef9bb3-fad9-460b-b250-ddeda784458b",
+                    "bDirty": true,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u6b63\u591a\u8fb9\u5f62",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706",
+                            "inPinId": 3,
+                            "lhsNodeUid": "ecad389f-619c-4bee-9cd9-c3b9c4c58603",
+                            "rhsNodeUid": "f4be03b0-6998-4943-b3b7-7f696c82a10c"
+                        }
+                    ],
+                    "pinIndex": 3,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u6b63\u591a\u8fb9\u5f62",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "9d18d36e-df68-4840-9053-d1903ac4e92e",
+                                "destinationUUID": "f4ef9bb3-fad9-460b-b250-ddeda784458b",
+                                "sourceName": "\u6b63\u591a\u8fb9\u5f62_\u5b9e\u4f53",
+                                "destinationName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706_\u6b63\u591a\u8fb9\u5f62",
+                                "uuid": "8a6b812f-740c-4ff8-9277-01ad2d78d31e",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "\u4f20\u5bfc",
+                    "package": "PyFlowBase",
+                    "fullName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706_\u4f20\u5bfc",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "a039c7be-ca5d-4af3-ac86-806ede1e5c41",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u504f\u79fb",
+                            "inPinId": 1,
+                            "lhsNodeUid": "f4be03b0-6998-4943-b3b7-7f696c82a10c",
+                            "rhsNodeUid": "efad0220-749a-464b-8d25-e17aee460c0a"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u4f20\u5bfc",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "a039c7be-ca5d-4af3-ac86-806ede1e5c41",
+                                "destinationUUID": "77e91491-8ed5-4347-829c-4cc4fb10caae",
+                                "sourceName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706_\u4f20\u5bfc",
+                                "destinationName": "\u504f\u79fb_\u8fd0\u884c",
+                                "uuid": "c2cb4746-3270-47b6-ae4e-dcc38849ad02",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u5b9e\u4f53",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706_\u5b9e\u4f53",
+                    "dataType": "FCobjPin",
+                    "direction": 1,
+                    "value": "\"ID_f4be03b0_6998_4943_b3b7_7f696c82a10c\"",
+                    "uuid": "0f41ddcb-aa56-444e-82d2-f3453c1a5b5e",
+                    "bDirty": true,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u504f\u79fb",
+                            "inPinId": 2,
+                            "lhsNodeUid": "f4be03b0-6998-4943-b3b7-7f696c82a10c",
+                            "rhsNodeUid": "efad0220-749a-464b-8d25-e17aee460c0a"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u5b9e\u4f53",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "0f41ddcb-aa56-444e-82d2-f3453c1a5b5e",
+                                "destinationUUID": "57fd0ddd-9479-4569-8193-7a6a92e144b7",
+                                "sourceName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706_\u5b9e\u4f53",
+                                "destinationName": "\u504f\u79fb_\u5f85\u504f\u79fb\u5b9e\u4f53",
+                                "uuid": "820aa01b-9c33-4f05-a955-94a536004033",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -86.62290629244,
+            "y": -83.50837483023994
+        },
+        {
+            "package": "PyFlowFreeCAD",
+            "lib": null,
+            "type": "\u5706\u5f62\u9635\u5217",
+            "owningGraphName": "root",
+            "name": "\u5706\u5f62\u9635\u5217",
+            "uuid": "eb37f8a8-10b1-4a20-92aa-ad6b0a0f92a1",
+            "inputs": [
+                {
+                    "name": "\u8fd0\u884c",
+                    "package": "PyFlowBase",
+                    "fullName": "\u5706\u5f62\u9635\u5217_\u8fd0\u884c",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "4c691240-9a24-40b7-be1f-9ee8b526cb1e",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "Cylinder",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u5706\u5f62\u9635\u5217",
+                            "inPinId": 1,
+                            "lhsNodeUid": "57da75b8-b95d-437d-85ef-13f11aa9477c",
+                            "rhsNodeUid": "eb37f8a8-10b1-4a20-92aa-ad6b0a0f92a1"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u8fd0\u884c",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "7b2c81ea-ada8-492a-8fdf-2ceee03c26d9",
+                                "destinationUUID": "4c691240-9a24-40b7-be1f-9ee8b526cb1e",
+                                "sourceName": "Cylinder_outExec",
+                                "destinationName": "\u5706\u5f62\u9635\u5217_\u8fd0\u884c",
+                                "uuid": "0cc079b4-81a4-427b-b49f-276cfe4807a4",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u9635\u5217\u4e2a\u6570",
+                    "package": "PyFlowBase",
+                    "fullName": "\u5706\u5f62\u9635\u5217_\u9635\u5217\u4e2a\u6570",
+                    "dataType": "IntPin",
+                    "direction": 0,
+                    "value": "6",
+                    "uuid": "6acda525-c1e7-49b2-800c-54fbe299d324",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeInt",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u5706\u5f62\u9635\u5217",
+                            "inPinId": 4,
+                            "lhsNodeUid": "25a80b6b-b5b5-4dfb-b347-237c44066662",
+                            "rhsNodeUid": "eb37f8a8-10b1-4a20-92aa-ad6b0a0f92a1"
+                        }
+                    ],
+                    "pinIndex": 4,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u9635\u5217\u4e2a\u6570",
+                        "wires": {
+                            "4": {
+                                "sourceUUID": "a06af8ab-2fca-4a2c-beff-b15d51c53a72",
+                                "destinationUUID": "6acda525-c1e7-49b2-800c-54fbe299d324",
+                                "sourceName": "makeInt_out",
+                                "destinationName": "\u5706\u5f62\u9635\u5217_\u9635\u5217\u4e2a\u6570",
+                                "uuid": "85153aa7-9c76-4043-84ba-df2318a1fe38",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u989c\u8272",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u5706\u5f62\u9635\u5217_\u989c\u8272",
+                    "dataType": "VectorPin",
+                    "direction": 0,
+                    "value": "{\"Vector\": [1.0, 1.0, 1.0]}",
+                    "uuid": "911e3cdf-2b0b-4d92-b30e-85efbeec1ce0",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u989c\u8272",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "\u5706\u5f62\u8def\u5f84",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u5706\u5f62\u9635\u5217_\u5706\u5f62\u8def\u5f84",
+                    "dataType": "FCobjPin",
+                    "direction": 0,
+                    "value": "\"ID_efad0220_749a_464b_8d25_e17aee460c0a\"",
+                    "uuid": "d7fd57b5-65db-4f37-a565-34c8b3c6ef20",
+                    "bDirty": true,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u504f\u79fb",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u5706\u5f62\u9635\u5217",
+                            "inPinId": 3,
+                            "lhsNodeUid": "efad0220-749a-464b-8d25-e17aee460c0a",
+                            "rhsNodeUid": "eb37f8a8-10b1-4a20-92aa-ad6b0a0f92a1"
+                        }
+                    ],
+                    "pinIndex": 3,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u5706\u5f62\u8def\u5f84",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "49c089ee-b7ea-4f54-aae5-d8316c4bbe2c",
+                                "destinationUUID": "d7fd57b5-65db-4f37-a565-34c8b3c6ef20",
+                                "sourceName": "\u504f\u79fb_\u5b9e\u4f53",
+                                "destinationName": "\u5706\u5f62\u9635\u5217_\u5706\u5f62\u8def\u5f84",
+                                "uuid": "393a6ff6-a1fd-48b5-b677-24427f02833f",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u5f85\u9635\u5217\u5b9e\u4f53",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u5706\u5f62\u9635\u5217_\u5f85\u9635\u5217\u5b9e\u4f53",
+                    "dataType": "FCobjPin",
+                    "direction": 0,
+                    "value": "\"ID_57da75b8_b95d_437d_85ef_13f11aa9477c\"",
+                    "uuid": "4c7076be-ebfe-4846-b596-268fe7fd51c5",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "Cylinder",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u5706\u5f62\u9635\u5217",
+                            "inPinId": 5,
+                            "lhsNodeUid": "57da75b8-b95d-437d-85ef-13f11aa9477c",
+                            "rhsNodeUid": "eb37f8a8-10b1-4a20-92aa-ad6b0a0f92a1"
+                        }
+                    ],
+                    "pinIndex": 5,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u5f85\u9635\u5217\u5b9e\u4f53",
+                        "wires": {
+                            "5": {
+                                "sourceUUID": "1ceaed52-b6bf-47c3-9671-b697522a1514",
+                                "destinationUUID": "4c7076be-ebfe-4846-b596-268fe7fd51c5",
+                                "sourceName": "Cylinder_Part",
+                                "destinationName": "\u5706\u5f62\u9635\u5217_\u5f85\u9635\u5217\u5b9e\u4f53",
+                                "uuid": "c253461d-33a4-447f-b828-7935729d623b",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "\u4f20\u5bfc",
+                    "package": "PyFlowBase",
+                    "fullName": "\u5706\u5f62\u9635\u5217_\u4f20\u5bfc",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "471ef529-379a-458c-ac9a-39ef44323827",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u5706\u5f62\u9635\u5217",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u5e03\u5c14\u8fd0\u7b97",
+                            "inPinId": 1,
+                            "lhsNodeUid": "eb37f8a8-10b1-4a20-92aa-ad6b0a0f92a1",
+                            "rhsNodeUid": "6d6fe45a-c9a7-481c-930c-c85f2f0786ba"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u4f20\u5bfc",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "471ef529-379a-458c-ac9a-39ef44323827",
+                                "destinationUUID": "cc46185c-c2ef-4303-aede-fd8225124593",
+                                "sourceName": "\u5706\u5f62\u9635\u5217_\u4f20\u5bfc",
+                                "destinationName": "\u5e03\u5c14\u8fd0\u7b97_\u8fd0\u884c",
+                                "uuid": "f93671b9-6ce4-413b-9b04-878cd9e1e700",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u5b9e\u4f53",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u5706\u5f62\u9635\u5217_\u5b9e\u4f53",
+                    "dataType": "FCobjPin",
+                    "direction": 1,
+                    "value": "\"PathArray\"",
+                    "uuid": "115ab87c-04b4-4bda-8418-92624f1658ea",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u5706\u5f62\u9635\u5217",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u5e03\u5c14\u8fd0\u7b97",
+                            "inPinId": 4,
+                            "lhsNodeUid": "eb37f8a8-10b1-4a20-92aa-ad6b0a0f92a1",
+                            "rhsNodeUid": "6d6fe45a-c9a7-481c-930c-c85f2f0786ba"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u5b9e\u4f53",
+                        "wires": {
+                            "4": {
+                                "sourceUUID": "115ab87c-04b4-4bda-8418-92624f1658ea",
+                                "destinationUUID": "ab0a091d-4252-41d8-9b05-da3d70460f9a",
+                                "sourceName": "\u5706\u5f62\u9635\u5217_\u5b9e\u4f53",
+                                "destinationName": "\u5e03\u5c14\u8fd0\u7b97_\u5de5\u5177\u4f53",
+                                "uuid": "41b4815e-11e1-4109-805d-f77014de4a7a",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "\u5706\u5f62\u9635\u5217"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u5706\u5f62\u9635\u5217</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 193.0,
+            "y": -48.0
+        },
+        {
+            "package": "PyFlowFreeCAD",
+            "lib": null,
+            "type": "Cylinder",
+            "owningGraphName": "root",
+            "name": "Cylinder",
+            "uuid": "57da75b8-b95d-437d-85ef-13f11aa9477c",
+            "inputs": [
+                {
+                    "name": "Height",
+                    "package": "PyFlowBase",
+                    "fullName": "Cylinder_Height",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "10.0",
+                    "uuid": "2df3cc79-2db1-4d8c-8821-fae62f4b8ba1",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 4,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Height",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "Color",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "Cylinder_Color",
+                    "dataType": "VectorPin",
+                    "direction": 0,
+                    "value": "{\"Vector\": [1.0, 1.0, 1.0]}",
+                    "uuid": "54f8bab9-db87-46b3-994f-b27f0bf71907",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Color",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "Angle",
+                    "package": "PyFlowBase",
+                    "fullName": "Cylinder_Angle",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "360.0",
+                    "uuid": "5294a862-40c1-4d49-99dc-d68acada4406",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 7,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Angle",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "inExec",
+                    "package": "PyFlowBase",
+                    "fullName": "Cylinder_inExec",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "2dd43c7a-5bd2-4391-923c-08f54a48692d",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u504f\u79fb",
+                            "outPinId": 1,
+                            "rhsNodeName": "Cylinder",
+                            "inPinId": 1,
+                            "lhsNodeUid": "efad0220-749a-464b-8d25-e17aee460c0a",
+                            "rhsNodeUid": "57da75b8-b95d-437d-85ef-13f11aa9477c"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "inExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "7967d9c6-1228-4178-a134-1f263e773ce5",
+                                "destinationUUID": "2dd43c7a-5bd2-4391-923c-08f54a48692d",
+                                "sourceName": "\u504f\u79fb_\u4f20\u5bfc",
+                                "destinationName": "Cylinder_inExec",
+                                "uuid": "4c616544-dc41-40d7-9f2b-ed909db17410",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Radius",
+                    "package": "PyFlowBase",
+                    "fullName": "Cylinder_Radius",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "1.0",
+                    "uuid": "6819e240-069f-4b9f-a197-a242749d0674",
+                    "bDirty": true,
+                    "linkedTo": [],
+                    "pinIndex": 3,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Radius",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "Center",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "Cylinder_Center",
+                    "dataType": "VectorPin",
+                    "direction": 0,
+                    "value": "{\"Vector\": [0.0, 0.0, 0.0]}",
+                    "uuid": "b4f35826-8af5-4b33-994d-5ec1f71bff9a",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 5,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Center",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "Direction",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "Cylinder_Direction",
+                    "dataType": "VectorPin",
+                    "direction": 0,
+                    "value": "{\"Vector\": [0.0, 0.0, 1.0]}",
+                    "uuid": "0aa8cedf-800e-47ad-99bd-268b0f768b3a",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 6,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Direction",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "outExec",
+                    "package": "PyFlowBase",
+                    "fullName": "Cylinder_outExec",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "7b2c81ea-ada8-492a-8fdf-2ceee03c26d9",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "Cylinder",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u5706\u5f62\u9635\u5217",
+                            "inPinId": 1,
+                            "lhsNodeUid": "57da75b8-b95d-437d-85ef-13f11aa9477c",
+                            "rhsNodeUid": "eb37f8a8-10b1-4a20-92aa-ad6b0a0f92a1"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "outExec",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "7b2c81ea-ada8-492a-8fdf-2ceee03c26d9",
+                                "destinationUUID": "4c691240-9a24-40b7-be1f-9ee8b526cb1e",
+                                "sourceName": "Cylinder_outExec",
+                                "destinationName": "\u5706\u5f62\u9635\u5217_\u8fd0\u884c",
+                                "uuid": "0cc079b4-81a4-427b-b49f-276cfe4807a4",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Part",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "Cylinder_Part",
+                    "dataType": "FCobjPin",
+                    "direction": 1,
+                    "value": "\"ID_57da75b8_b95d_437d_85ef_13f11aa9477c\"",
+                    "uuid": "1ceaed52-b6bf-47c3-9671-b697522a1514",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "Cylinder",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u5706\u5f62\u9635\u5217",
+                            "inPinId": 5,
+                            "lhsNodeUid": "57da75b8-b95d-437d-85ef-13f11aa9477c",
+                            "rhsNodeUid": "eb37f8a8-10b1-4a20-92aa-ad6b0a0f92a1"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Part",
+                        "wires": {
+                            "5": {
+                                "sourceUUID": "1ceaed52-b6bf-47c3-9671-b697522a1514",
+                                "destinationUUID": "4c7076be-ebfe-4846-b596-268fe7fd51c5",
+                                "sourceName": "Cylinder_Part",
+                                "destinationName": "\u5706\u5f62\u9635\u5217_\u5f85\u9635\u5217\u5b9e\u4f53",
+                                "uuid": "c253461d-33a4-447f-b828-7935729d623b",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "Shape",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "Cylinder_Shape",
+                    "dataType": "ShapePin",
+                    "direction": 1,
+                    "value": "\"5d62d37a-361e-4914-ab35-187a38f0e771\"",
+                    "uuid": "5d62d37a-361e-4914-ab35-187a38f0e771",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 3,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "Shape",
+                        "wires": {}
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "Cylinder"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Cylinder</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -202.77113184115012,
+            "y": 121.63384049620018
+        },
+        {
+            "package": "PyFlowFreeCAD",
+            "lib": null,
+            "type": "\u62c9\u4f38",
+            "owningGraphName": "root",
+            "name": "\u62c9\u4f38",
+            "uuid": "21141782-b96b-4b43-bfd4-943507fd5147",
+            "inputs": [
+                {
+                    "name": "\u8fd0\u884c",
+                    "package": "PyFlowBase",
+                    "fullName": "\u62c9\u4f38_\u8fd0\u884c",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "8b58ec03-d6eb-4a17-bf39-64fed542ae8c",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u6b63\u591a\u8fb9\u5f62",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u62c9\u4f38",
+                            "inPinId": 1,
+                            "lhsNodeUid": "ecad389f-619c-4bee-9cd9-c3b9c4c58603",
+                            "rhsNodeUid": "21141782-b96b-4b43-bfd4-943507fd5147"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u8fd0\u884c",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "65ba941b-475d-46a7-8674-5760d9a4fb6b",
+                                "destinationUUID": "8b58ec03-d6eb-4a17-bf39-64fed542ae8c",
+                                "sourceName": "\u6b63\u591a\u8fb9\u5f62_\u4f20\u5bfc",
+                                "destinationName": "\u62c9\u4f38_\u8fd0\u884c",
+                                "uuid": "ae82db33-88aa-4b5a-a9a3-c4b20d6a02e2",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u62c9\u4f38\u65b9\u5411",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u62c9\u4f38_\u62c9\u4f38\u65b9\u5411",
+                    "dataType": "VectorPin",
+                    "direction": 0,
+                    "value": "{\"Vector\": [0.0, 0.0, 1.0]}",
+                    "uuid": "fefc9005-792d-431c-a6d9-abee06786c75",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 3,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u62c9\u4f38\u65b9\u5411",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "\u5f85\u62c9\u4f38\u5b9e\u4f53",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u62c9\u4f38_\u5f85\u62c9\u4f38\u5b9e\u4f53",
+                    "dataType": "FCobjPin",
+                    "direction": 0,
+                    "value": "\"ID_ecad389f_619c_4bee_9cd9_c3b9c4c58603\"",
+                    "uuid": "b5c47f35-323b-4af2-a33f-cb47d78f0283",
+                    "bDirty": true,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u6b63\u591a\u8fb9\u5f62",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u62c9\u4f38",
+                            "inPinId": 2,
+                            "lhsNodeUid": "ecad389f-619c-4bee-9cd9-c3b9c4c58603",
+                            "rhsNodeUid": "21141782-b96b-4b43-bfd4-943507fd5147"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u5f85\u62c9\u4f38\u5b9e\u4f53",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "9d18d36e-df68-4840-9053-d1903ac4e92e",
+                                "destinationUUID": "b5c47f35-323b-4af2-a33f-cb47d78f0283",
+                                "sourceName": "\u6b63\u591a\u8fb9\u5f62_\u5b9e\u4f53",
+                                "destinationName": "\u62c9\u4f38_\u5f85\u62c9\u4f38\u5b9e\u4f53",
+                                "uuid": "a8584fab-f4e5-4a1b-a773-2b38f8dfeb1b",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u62c9\u4f38\u957f\u5ea6",
+                    "package": "PyFlowBase",
+                    "fullName": "\u62c9\u4f38_\u62c9\u4f38\u957f\u5ea6",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "10.0",
+                    "uuid": "ee9fc2cc-fb26-4cde-a045-89fce6d5b40b",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 4,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u62c9\u4f38\u957f\u5ea6",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "\u5b9e\u4f53",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u62c9\u4f38_\u5b9e\u4f53",
+                    "dataType": "FCobjPin",
+                    "direction": 1,
+                    "value": "\"ID_21141782_b96b_4b43_bfd4_943507fd5147\"",
+                    "uuid": "5cbc26fd-453d-4731-9286-1172cfa617a1",
+                    "bDirty": true,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u62c9\u4f38",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u5e03\u5c14\u8fd0\u7b97",
+                            "inPinId": 3,
+                            "lhsNodeUid": "21141782-b96b-4b43-bfd4-943507fd5147",
+                            "rhsNodeUid": "6d6fe45a-c9a7-481c-930c-c85f2f0786ba"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u5b9e\u4f53",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "5cbc26fd-453d-4731-9286-1172cfa617a1",
+                                "destinationUUID": "2123e669-089a-4268-871b-21d9569e8891",
+                                "sourceName": "\u62c9\u4f38_\u5b9e\u4f53",
+                                "destinationName": "\u5e03\u5c14\u8fd0\u7b97_\u57fa\u672c\u4f53",
+                                "uuid": "41ffb369-9cdf-4383-a1b0-1bcc8589e715",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u4f20\u5bfc",
+                    "package": "PyFlowBase",
+                    "fullName": "\u62c9\u4f38_\u4f20\u5bfc",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "bd6ba0c7-b685-4d6c-b174-f394f5dfe2e1",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u62c9\u4f38",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706",
+                            "inPinId": 1,
+                            "lhsNodeUid": "21141782-b96b-4b43-bfd4-943507fd5147",
+                            "rhsNodeUid": "f4be03b0-6998-4943-b3b7-7f696c82a10c"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u4f20\u5bfc",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "bd6ba0c7-b685-4d6c-b174-f394f5dfe2e1",
+                                "destinationUUID": "4e46a71e-e0ad-4e08-91e1-e1096a592fc7",
+                                "sourceName": "\u62c9\u4f38_\u4f20\u5bfc",
+                                "destinationName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706_\u8fd0\u884c",
+                                "uuid": "26766153-0cfa-4549-8db3-ae498d0e4ec3",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "\u62c9\u4f38"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u62c9\u4f38</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -67.2818080460479,
+            "y": -314.57519989018215
+        },
+        {
+            "package": "PyFlowFreeCAD",
+            "lib": null,
+            "type": "\u5e03\u5c14\u8fd0\u7b97",
+            "owningGraphName": "root",
+            "name": "\u5e03\u5c14\u8fd0\u7b97",
+            "uuid": "6d6fe45a-c9a7-481c-930c-c85f2f0786ba",
+            "inputs": [
+                {
+                    "name": "\u989c\u8272",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u5e03\u5c14\u8fd0\u7b97_\u989c\u8272",
+                    "dataType": "VectorPin",
+                    "direction": 0,
+                    "value": "{\"Vector\": [1.0, 1.0, 1.0]}",
+                    "uuid": "8558ff60-65dc-4d6e-a9bc-f0dc168fb0fe",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u989c\u8272",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "\u57fa\u672c\u4f53",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u5e03\u5c14\u8fd0\u7b97_\u57fa\u672c\u4f53",
+                    "dataType": "FCobjPin",
+                    "direction": 0,
+                    "value": "\"ID_21141782_b96b_4b43_bfd4_943507fd5147\"",
+                    "uuid": "2123e669-089a-4268-871b-21d9569e8891",
+                    "bDirty": true,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u62c9\u4f38",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u5e03\u5c14\u8fd0\u7b97",
+                            "inPinId": 3,
+                            "lhsNodeUid": "21141782-b96b-4b43-bfd4-943507fd5147",
+                            "rhsNodeUid": "6d6fe45a-c9a7-481c-930c-c85f2f0786ba"
+                        }
+                    ],
+                    "pinIndex": 3,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u57fa\u672c\u4f53",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "5cbc26fd-453d-4731-9286-1172cfa617a1",
+                                "destinationUUID": "2123e669-089a-4268-871b-21d9569e8891",
+                                "sourceName": "\u62c9\u4f38_\u5b9e\u4f53",
+                                "destinationName": "\u5e03\u5c14\u8fd0\u7b97_\u57fa\u672c\u4f53",
+                                "uuid": "41ffb369-9cdf-4383-a1b0-1bcc8589e715",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u5e03\u5c14\u8fd0\u7b97",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u5e03\u5c14\u8fd0\u7b97_\u5e03\u5c14\u8fd0\u7b97",
+                    "dataType": "String",
+                    "direction": 0,
+                    "value": "\"\\u8865\\u96c6\"",
+                    "uuid": "dcd4fbbd-2156-4317-aedd-e063ac0c7543",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 5,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u5e03\u5c14\u8fd0\u7b97",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "\u8fd0\u884c",
+                    "package": "PyFlowBase",
+                    "fullName": "\u5e03\u5c14\u8fd0\u7b97_\u8fd0\u884c",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "cc46185c-c2ef-4303-aede-fd8225124593",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u5706\u5f62\u9635\u5217",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u5e03\u5c14\u8fd0\u7b97",
+                            "inPinId": 1,
+                            "lhsNodeUid": "eb37f8a8-10b1-4a20-92aa-ad6b0a0f92a1",
+                            "rhsNodeUid": "6d6fe45a-c9a7-481c-930c-c85f2f0786ba"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u8fd0\u884c",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "471ef529-379a-458c-ac9a-39ef44323827",
+                                "destinationUUID": "cc46185c-c2ef-4303-aede-fd8225124593",
+                                "sourceName": "\u5706\u5f62\u9635\u5217_\u4f20\u5bfc",
+                                "destinationName": "\u5e03\u5c14\u8fd0\u7b97_\u8fd0\u884c",
+                                "uuid": "f93671b9-6ce4-413b-9b04-878cd9e1e700",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u5de5\u5177\u4f53",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u5e03\u5c14\u8fd0\u7b97_\u5de5\u5177\u4f53",
+                    "dataType": "FCobjPin",
+                    "direction": 0,
+                    "value": "\"PathArray\"",
+                    "uuid": "ab0a091d-4252-41d8-9b05-da3d70460f9a",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u5706\u5f62\u9635\u5217",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u5e03\u5c14\u8fd0\u7b97",
+                            "inPinId": 4,
+                            "lhsNodeUid": "eb37f8a8-10b1-4a20-92aa-ad6b0a0f92a1",
+                            "rhsNodeUid": "6d6fe45a-c9a7-481c-930c-c85f2f0786ba"
+                        }
+                    ],
+                    "pinIndex": 4,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u5de5\u5177\u4f53",
+                        "wires": {
+                            "4": {
+                                "sourceUUID": "115ab87c-04b4-4bda-8418-92624f1658ea",
+                                "destinationUUID": "ab0a091d-4252-41d8-9b05-da3d70460f9a",
+                                "sourceName": "\u5706\u5f62\u9635\u5217_\u5b9e\u4f53",
+                                "destinationName": "\u5e03\u5c14\u8fd0\u7b97_\u5de5\u5177\u4f53",
+                                "uuid": "41b4815e-11e1-4109-805d-f77014de4a7a",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "\u4f20\u5bfc",
+                    "package": "PyFlowBase",
+                    "fullName": "\u5e03\u5c14\u8fd0\u7b97_\u4f20\u5bfc",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "33c26661-4f7f-45a5-a062-87a3dcf16652",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u4f20\u5bfc",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "\u5b9e\u4f53",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u5e03\u5c14\u8fd0\u7b97_\u5b9e\u4f53",
+                    "dataType": "FCobjPin",
+                    "direction": 1,
+                    "value": "\"ID_6d6fe45a_c9a7_481c_930c_c85f2f0786ba\"",
+                    "uuid": "b4fb8d43-3887-4e65-9e62-ba9901f5242c",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u5b9e\u4f53",
+                        "wires": {}
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "\u5e03\u5c14\u8fd0\u7b97"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u5e03\u5c14\u8fd0\u7b97</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 114.0,
+            "y": -271.0
+        },
+        {
+            "package": "PyFlowBase",
+            "lib": "DefaultLib",
+            "type": "makeInt",
+            "owningGraphName": "root",
+            "name": "makeInt",
+            "uuid": "25a80b6b-b5b5-4dfb-b347-237c44066662",
+            "inputs": [
+                {
+                    "name": "i",
+                    "package": "PyFlowBase",
+                    "fullName": "makeInt_i",
+                    "dataType": "IntPin",
+                    "direction": 0,
+                    "value": "6",
+                    "uuid": "2d59e68d-3bf2-41cd-8e49-90f22635a535",
+                    "bDirty": true,
+                    "linkedTo": [],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "i",
+                        "wires": {}
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "out",
+                    "package": "PyFlowBase",
+                    "fullName": "makeInt_out",
+                    "dataType": "IntPin",
+                    "direction": 1,
+                    "value": "6",
+                    "uuid": "a06af8ab-2fca-4a2c-beff-b15d51c53a72",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "makeInt",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u6b63\u591a\u8fb9\u5f62",
+                            "inPinId": 4,
+                            "lhsNodeUid": "25a80b6b-b5b5-4dfb-b347-237c44066662",
+                            "rhsNodeUid": "ecad389f-619c-4bee-9cd9-c3b9c4c58603"
+                        },
+                        {
+                            "lhsNodeName": "makeInt",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u5706\u5f62\u9635\u5217",
+                            "inPinId": 4,
+                            "lhsNodeUid": "25a80b6b-b5b5-4dfb-b347-237c44066662",
+                            "rhsNodeUid": "eb37f8a8-10b1-4a20-92aa-ad6b0a0f92a1"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "out",
+                        "wires": {
+                            "4": {
+                                "sourceUUID": "a06af8ab-2fca-4a2c-beff-b15d51c53a72",
+                                "destinationUUID": "6acda525-c1e7-49b2-800c-54fbe299d324",
+                                "sourceName": "makeInt_out",
+                                "destinationName": "\u5706\u5f62\u9635\u5217_\u9635\u5217\u4e2a\u6570",
+                                "uuid": "85153aa7-9c76-4043-84ba-df2318a1fe38",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "makeInt"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">makeInt</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": -802.7538995726077,
+            "y": 115.30304211639924
+        },
+        {
+            "package": "PyFlowFreeCAD",
+            "lib": null,
+            "type": "\u504f\u79fb",
+            "owningGraphName": "root",
+            "name": "\u504f\u79fb",
+            "uuid": "efad0220-749a-464b-8d25-e17aee460c0a",
+            "inputs": [
+                {
+                    "name": "\u8fd0\u884c",
+                    "package": "PyFlowBase",
+                    "fullName": "\u504f\u79fb_\u8fd0\u884c",
+                    "dataType": "ExecPin",
+                    "direction": 0,
+                    "value": "null",
+                    "uuid": "77e91491-8ed5-4347-829c-4cc4fb10caae",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706",
+                            "outPinId": 1,
+                            "rhsNodeName": "\u504f\u79fb",
+                            "inPinId": 1,
+                            "lhsNodeUid": "f4be03b0-6998-4943-b3b7-7f696c82a10c",
+                            "rhsNodeUid": "efad0220-749a-464b-8d25-e17aee460c0a"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        8,
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u8fd0\u884c",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "a039c7be-ca5d-4af3-ac86-806ede1e5c41",
+                                "destinationUUID": "77e91491-8ed5-4347-829c-4cc4fb10caae",
+                                "sourceName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706_\u4f20\u5bfc",
+                                "destinationName": "\u504f\u79fb_\u8fd0\u884c",
+                                "uuid": "c2cb4746-3270-47b6-ae4e-dcc38849ad02",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u504f\u79fb\u8ddd\u79bb",
+                    "package": "PyFlowBase",
+                    "fullName": "\u504f\u79fb_\u504f\u79fb\u8ddd\u79bb",
+                    "dataType": "FloatPin",
+                    "direction": 0,
+                    "value": "-3.0",
+                    "uuid": "003ec44c-7c87-44dd-a95e-2c597c1db900",
+                    "bDirty": false,
+                    "linkedTo": [],
+                    "pinIndex": 3,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u504f\u79fb\u8ddd\u79bb",
+                        "wires": {}
+                    }
+                },
+                {
+                    "name": "\u5f85\u504f\u79fb\u5b9e\u4f53",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u504f\u79fb_\u5f85\u504f\u79fb\u5b9e\u4f53",
+                    "dataType": "FCobjPin",
+                    "direction": 0,
+                    "value": "\"ID_f4be03b0_6998_4943_b3b7_7f696c82a10c\"",
+                    "uuid": "57fd0ddd-9479-4569-8193-7a6a92e144b7",
+                    "bDirty": true,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u504f\u79fb",
+                            "inPinId": 2,
+                            "lhsNodeUid": "f4be03b0-6998-4943-b3b7-7f696c82a10c",
+                            "rhsNodeUid": "efad0220-749a-464b-8d25-e17aee460c0a"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u5f85\u504f\u79fb\u5b9e\u4f53",
+                        "wires": {
+                            "2": {
+                                "sourceUUID": "0f41ddcb-aa56-444e-82d2-f3453c1a5b5e",
+                                "destinationUUID": "57fd0ddd-9479-4569-8193-7a6a92e144b7",
+                                "sourceName": "\u6b63\u591a\u8fb9\u5f62\u5916\u63a5\u5706_\u5b9e\u4f53",
+                                "destinationName": "\u504f\u79fb_\u5f85\u504f\u79fb\u5b9e\u4f53",
+                                "uuid": "820aa01b-9c33-4f05-a955-94a536004033",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "outputs": [
+                {
+                    "name": "\u5b9e\u4f53",
+                    "package": "PyFlowFreeCAD",
+                    "fullName": "\u504f\u79fb_\u5b9e\u4f53",
+                    "dataType": "FCobjPin",
+                    "direction": 1,
+                    "value": "\"ID_efad0220_749a_464b_8d25_e17aee460c0a\"",
+                    "uuid": "49c089ee-b7ea-4f54-aae5-d8316c4bbe2c",
+                    "bDirty": true,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u504f\u79fb",
+                            "outPinId": 2,
+                            "rhsNodeName": "\u5706\u5f62\u9635\u5217",
+                            "inPinId": 3,
+                            "lhsNodeUid": "efad0220-749a-464b-8d25-e17aee460c0a",
+                            "rhsNodeUid": "eb37f8a8-10b1-4a20-92aa-ad6b0a0f92a1"
+                        }
+                    ],
+                    "pinIndex": 2,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u5b9e\u4f53",
+                        "wires": {
+                            "3": {
+                                "sourceUUID": "49c089ee-b7ea-4f54-aae5-d8316c4bbe2c",
+                                "destinationUUID": "d7fd57b5-65db-4f37-a565-34c8b3c6ef20",
+                                "sourceName": "\u504f\u79fb_\u5b9e\u4f53",
+                                "destinationName": "\u5706\u5f62\u9635\u5217_\u5706\u5f62\u8def\u5f84",
+                                "uuid": "393a6ff6-a1fd-48b5-b677-24427f02833f",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "name": "\u4f20\u5bfc",
+                    "package": "PyFlowBase",
+                    "fullName": "\u504f\u79fb_\u4f20\u5bfc",
+                    "dataType": "ExecPin",
+                    "direction": 1,
+                    "value": "null",
+                    "uuid": "7967d9c6-1228-4178-a134-1f263e773ce5",
+                    "bDirty": false,
+                    "linkedTo": [
+                        {
+                            "lhsNodeName": "\u504f\u79fb",
+                            "outPinId": 1,
+                            "rhsNodeName": "Cylinder",
+                            "inPinId": 1,
+                            "lhsNodeUid": "efad0220-749a-464b-8d25-e17aee460c0a",
+                            "rhsNodeUid": "57da75b8-b95d-437d-85ef-13f11aa9477c"
+                        }
+                    ],
+                    "pinIndex": 1,
+                    "options": [
+                        256
+                    ],
+                    "structure": 0,
+                    "alwaysList": false,
+                    "alwaysSingle": false,
+                    "alwaysDict": false,
+                    "wrapper": {
+                        "bLabelHidden": false,
+                        "displayName": "\u4f20\u5bfc",
+                        "wires": {
+                            "1": {
+                                "sourceUUID": "7967d9c6-1228-4178-a134-1f263e773ce5",
+                                "destinationUUID": "2dd43c7a-5bd2-4391-923c-08f54a48692d",
+                                "sourceName": "\u504f\u79fb_\u4f20\u5bfc",
+                                "destinationName": "Cylinder_inExec",
+                                "uuid": "4c616544-dc41-40d7-9f2b-ed909db17410",
+                                "hOffsetL": "0.0",
+                                "hOffsetR": "0.0",
+                                "hOffsetLSShape": "0.0",
+                                "hOffsetRSShape": "0.0",
+                                "vOffset": "0.0",
+                                "vOffsetSShape": "0.0",
+                                "snapVToFirst": 1,
+                                "snapVToSecond": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "meta": {
+                "var": {},
+                "label": "\u504f\u79fb"
+            },
+            "wrapper": {
+                "collapsed": false,
+                "headerHtml": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\np, li { white-space: pre-wrap; }\n</style></head><body style=\" font-family:'Consolas'; font-size:6pt; font-weight:400; font-style:normal;\">\n<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">\u504f\u79fb</p></body></html>",
+                "exposeInputsToCompound": false,
+                "groups": {
+                    "input": {},
+                    "output": {}
+                }
+            },
+            "x": 37.493715003052884,
+            "y": -2.6781225002180697
+        }
+    ],
+    "depth": 1,
+    "isRoot": true,
+    "parentGraphName": "None",
+    "fileVersion": "2.0.1",
+    "activeGraph": "root"
+}
