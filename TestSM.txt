@@ -1,0 +1,70 @@
+    public class TestBox : GH_Component
+    {
+        public TestBox(): base("", "Box", "", "Test", "20230216") { }
+        protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
+        {
+            pManager.AddNumberParameter("", "L", "", GH_ParamAccess.item);
+            pManager.AddNumberParameter("", "W", "", GH_ParamAccess.item);
+            pManager.AddNumberParameter("", "H", "", GH_ParamAccess.item);
+        }
+        protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
+        {
+            pManager.AddBrepParameter("", "B", "", GH_ParamAccess.item);
+        }
+        protected override void SolveInstance(IGH_DataAccess DA)
+        {
+            double L = 0;
+            double W = 0;
+            double H = 0;
+            DA.GetData(0, ref L);
+            DA.GetData(1, ref W);
+            DA.GetData(2, ref H);
+            Brep B = AddBox(L, W, H);
+            DA.SetData(0, B);
+        }
+        public Brep AddBox(double L, double W, double H)
+        {
+            Point3d P1 = new Point3d(-L / 2, -W / 2, 0);
+            Point3d P2 = new Point3d(L / 2, W / 2, H);
+            BoundingBox G = new BoundingBox(P1, P2);
+            Brep B = G.ToBrep();
+            return B;
+        }
+        public override GH_Exposure Exposure => GH_Exposure.primary;
+        protected override System.Drawing.Bitmap Icon => null;
+        public override Guid ComponentGuid => new Guid("F6B5F045-C758-4B1B-9206-237AB6E43781");
+    }
+    public class TestCylinder : GH_Component
+    {
+        public TestCylinder() : base("", "Cylinder", "", "Test", "20230216") { }
+        protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
+        {
+            pManager.AddNumberParameter("", "R", "", GH_ParamAccess.item);
+            pManager.AddNumberParameter("", "H", "", GH_ParamAccess.item);
+        }
+        protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
+        {
+            pManager.AddBrepParameter("", "B", "", GH_ParamAccess.item);
+        }
+        protected override void SolveInstance(IGH_DataAccess DA)
+        {
+            double R = 0;
+            double H = 0;
+            DA.GetData(0, ref R);
+            DA.GetData(1, ref H);
+            Brep B = AddCylinder(R, H);
+            DA.SetData(0, B);
+        }
+        public Brep AddCylinder(double R, double H)
+        {
+            Point3d O = new Point3d(0, 0, 0);
+            Vector3d N = new Vector3d(0, 0, 1);
+            Rhino.Geometry.Plane P = new Rhino.Geometry.Plane(O, N);
+            Circle C = new Circle(P, R);
+            Rhino.Geometry.Cylinder G = new Rhino.Geometry.Cylinder(C, H);
+            Brep B = G.ToBrep(true, true);
+            return B;
+        }
+        protected override System.Drawing.Bitmap Icon => null;
+        public override Guid ComponentGuid => new Guid("F7B5F045-C758-4B1B-9206-237AB6E43781");
+    }
