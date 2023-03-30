@@ -1,0 +1,2 @@
+MATCH(N:XmlTag) WHERE(N._name="dev") MATCH(N:XmlTag) WHERE(N._模型名称=~".*变压器.*") MATCH(N:XmlTag) WHERE(N._绝缘方式=~".*油浸式.*") RETURN N
+MATCH(N) WHERE(N._name="dev") MATCH(N) WHERE(N._模型名称=~".*变压器.*") MATCH(N) WHERE(N._绝缘方式=~".*油浸式.*") RETURN N
