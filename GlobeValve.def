@@ -1,0 +1,67 @@
+'Inputs
+@Param 1 A
+@Param 2 B
+@Param 3 C
+
+'Outputs
+@Define_Posi ORI 0 0 0
+@Define_Posi PORT1 -A/2 0 0
+@Define_Posi PORT2 A/2 0 0
+@Define_Posi P1 0 0 0
+@Define_Posi P2 0 B 0
+@Define_Posi P3 0 FHOD_1*1000*0.5 0
+@Define_Posi P4 0 FHOD_1*1000*0.5-5 0
+@Define_Posi P5 0 FHOD_1*1000*0.5+FHT_1*1000*3 0
+@Define_Posi P6 FHOD_1*1000*0.6 FHOD_1*1000*0.5+FHT_1*1000*3 0
+@Define_Posi P7 -FHOD_1*1000*0.6 FHOD_1*1000*0.5+FHT_1*1000*3 0
+@Define_Posi P8 B*0.24 FHOD_1*1000*0.5+FHT_1*1000*3+B*0.45 0
+@Define_Posi P9 -B*0.24 FHOD_1*1000*0.5+FHT_1*1000*3+B*0.45 0
+@Define_Posi P10 0 B 0
+@Define_Posi P11 0 B-10 0
+
+@Define_Posi FP 0 0 A*0.35
+
+@Define_Vect +X +1 0 0 0 1 0
+@Define_Vect -X -1 0 0 0 1 0
+@Define_Vect +Y 0 +1 0 0 0 1
+@Define_Vect -Y 0 -1 0 0 0 1
+@Define_Vect +Z 0 0 +1 0 1 0
+@Define_Vect -Z 0 0 -1 0 1 0
+@Define_Vect +X1 -0.15 0.85 0 0 0 1
+@Define_Vect -X1 +0.15 0.85 0 0 0 1
+
+@Add_Cylinder PORT1 +X FHOD_1*1000*0.5 FHT_1*1000
+@Add_Cylinder PORT2 -X FHOD_2*1000*0.5 FHT_2*1000
+@Add_Sphere ORI -Y A*0.25
+@Add_Cone PORT1 +X POD_1*1000/2 A*0.25 A/2
+@Add_Cone PORT2 -X POD_2*1000/2 A*0.25 A/2
+@Add_Cylinder P1 +Y A*0.25 B*0.3
+@Add_Cylinder P3 +Y A*0.3 FHT_1*1000
+@Add_Cylinder P4 -Y A*0.3 FHT_1*1000
+@Add_Cone P3 +Y A*0.2 A*0.1 FHT_1*1000*4
+@Add_Cylinder P5 +X FHT_1*1000 FHOD_1*1000*0.6
+@Add_Cylinder P5 -X FHT_1*1000 FHOD_1*1000*0.6
+@Add_Cylinder P5 +Y FHT_1*1000 B*0.5
+@Add_Cylinder P6 +X1 FHT_1*1000 B*0.45
+@Add_Cylinder P7 -X1 FHT_1*1000 B*0.45
+@Add_Sphere P6 -Y FHT_1*1000
+@Add_Sphere P7 -Y FHT_1*1000
+@Add_Cylinder P8 -X FHT_1*1000 B*0.48
+@Add_Sphere P8 -Y FHT_1*1000
+@Add_Sphere P9 -Y FHT_1*1000
+@Add_Cylinder P10 -Y A*0.125 B*0.25
+@Add_Cylinder P11 -Y C*0.5 FHT_1*1000
+
+
+@Set_Detail
+@Add_FlowDir FP +X P0D_1*1000*0.2 A*0.25
+
+@Set_Insulation
+@Add_Cylinder PORT1 +X FHOD_1*1000*0.5+INSULTHK FHT_1*1000
+@Add_Cylinder PORT2 -X FHOD_2*1000*0.5+INSULTHK FHT_2*1000
+@Add_Cylinder PORT1 +X A*0.3+INSULTHK A
+
+@Add_Port PORT1 -X 1
+@Add_Port PORT2 +X 2
+
+
